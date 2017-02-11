@@ -1,5 +1,4 @@
-* text=auto
-VERSION export-subst
+* text=auto export-subst
 
 .gitattributes export-ignore
 .gitignore export-ignore

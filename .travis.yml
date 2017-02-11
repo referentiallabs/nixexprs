@@ -1,0 +1,10 @@
+language: nix
+script:
+- set -ex
+- nix-instantiate --parse ./.
+- nix-instantiate --eval --strict ./.
+- git archive --format tar.gz -o ${PWD}/nixexprs.tar.gz HEAD
+- nix-instantiate -I reflabs=file://${PWD}/nixexprs.tar.gz --find-file 'reflabs'
+- nix-instantiate -I reflabs=file://${PWD}/nixexprs.tar.gz --eval --expr '(import <reflabs>).version' 2>/dev/null 1>version.txt
+- cat version.txt | grep $(git rev-parse --short HEAD)
+

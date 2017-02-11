@@ -40,7 +40,7 @@ show an error like the following, make sure `${HOME}/.nix-defexpr/channels` is
 at the end of your path without a named prefix:
 
 ```
-error: file ‘reflabs2’ was not found in the Nix search path (add it using $NIX_PATH or -I)
+error: file ‘reflabs’ was not found in the Nix search path (add it using $NIX_PATH or -I)
 ```
 
 ## Organization

@@ -1,4 +1,4 @@
-# <reflabs> Nix expressions
+# &lt;reflabs&gt; Nix expressions
 
 A Nix channel for projects conforming to the Referential Labs conventions
 (documentation coming soon).

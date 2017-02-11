@@ -1,7 +1,9 @@
 # &lt;reflabs&gt; Nix expressions
 
 A Nix channel for projects conforming to the Referential Labs conventions
-(documentation coming soon).
+(documentation coming soon). An opinionated set of conventions that promotes
+consistent organization and structure using sensible defaults allowing
+vendor-specific overrides via lambdas.
 
 ## Status
 
